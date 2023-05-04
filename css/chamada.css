@@ -31,3 +31,27 @@
 .chamada__botao {
     width: 100%;
 }
+
+/*Dá uma condição para que algo aconteça*/
+/*  mais uma condição para a “media querie”, que é o que chamamos de “media type”
+ (tipo de mídia). Ela vai existir para dispositivos que tenham tela.*/
+ /* print and qnd for para imprimir, ex. boletos*/
+@media screen and (min-width: 768px) { 
+    .chamada__texto {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .chamada {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+
+        padding-top: 8.25rem;
+    }
+
+    .chamada__titulo {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
+}

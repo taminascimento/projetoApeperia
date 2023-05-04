@@ -16,13 +16,13 @@
     --planos-cartao-ultra: #B04CD9;
     --planos-cartao-mega: #E33B3B;
 
-    --montserrat: 'Montserrat' , sans-serif ;
+    --montserrat: 'Montserrat', sans-serif;
 /*  O CSS tem um recurso novo, que é chamado de Variáveis CSS, então nós podemos 
 pegar esses valores de propriedades e salvá-los em variáveis.*/
 }
 
 body {
-    font-family: "Open Sans", sans-serif ;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -39,4 +39,11 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--branco);
     border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
 }
